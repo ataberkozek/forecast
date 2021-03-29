@@ -12,7 +12,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
