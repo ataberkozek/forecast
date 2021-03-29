@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 
 public interface ZipCodeRepo extends JpaRepository<ZipCode,Long> {
-//    public ZipCode findByZip(String zip);
+
 }
