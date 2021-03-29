@@ -38,8 +38,9 @@ public class WeatherService {
         ZipCode zip=new ZipCode(zipCode);
         zipCodeRepo.save(zip);
         try {
+            
             return restTemplate.getForObject(url, Response.class);
-             
+            
             } catch (HttpClientErrorException ex) {
                 Response response = new Response();
                 response.setName("error");
