@@ -21,12 +21,9 @@ public class WeatherController {
 	
 	@GetMapping
 	public String getIndex(Model model,String zipCode) {
-//		Response response = weatherService.getForecast("06105");
-//		model.addAttribute("data", response); 
 		List<ZipCode> zipCodeList= weatherService.getRecentSearces();
 		model.addAttribute("request", new Request());
 		model.addAttribute("zip_codes",zipCodeList);
-	
 		return "index"; 
 	}
 	
