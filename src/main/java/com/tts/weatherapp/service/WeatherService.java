@@ -38,9 +38,6 @@ public class WeatherService {
         ZipCode zip=new ZipCode(zipCode);
         zipCodeRepo.save(zip);
         try {
-        //    if(zipCodeRepo.findByZip(zipCode)==null){
-        //     
-        //    }
             return restTemplate.getForObject(url, Response.class);
              
             } catch (HttpClientErrorException ex) {
