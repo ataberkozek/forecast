@@ -22,7 +22,7 @@ public class ZipCode {
         this.zipCode=zipCode;
 	}
 
-	@Id
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="id")
     @NonNull
